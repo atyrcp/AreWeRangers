@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EmployeeCell" customModule="AreWeRangers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="594" height="273"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="594" height="273"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TBQ-Py-SFN">
+                        <rect key="frame" x="16" y="52.5" width="178" height="178"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="TBQ-Py-SFN" secondAttribute="height" multiplier="1:1" id="cvo-mx-Yka"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cVo-jE-guq">
+                        <rect key="frame" x="210" y="103" width="368" height="77.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZN-86-gx4">
+                                <rect key="frame" x="0.0" y="0.0" width="368" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBU-H6-frJ">
+                                <rect key="frame" x="0.0" y="28.5" width="368" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCH-ue-t3i">
+                                <rect key="frame" x="0.0" y="57" width="368" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ca1-y8-CtH">
+                        <rect key="frame" x="8" y="238.5" width="578" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="oo0-56-BHX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.052066169679164886" green="0.065320126712322235" blue="0.12157518416643143" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Ca1-y8-CtH" secondAttribute="trailing" constant="8" id="4wT-kl-haW"/>
+                <constraint firstItem="TBQ-Py-SFN" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="8ps-eg-ocd"/>
+                <constraint firstItem="Ca1-y8-CtH" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="DE1-kX-K4G"/>
+                <constraint firstItem="Ca1-y8-CtH" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="Mza-8S-Y0N"/>
+                <constraint firstItem="TBQ-Py-SFN" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.3" id="fF8-CA-3fU"/>
+                <constraint firstItem="cVo-jE-guq" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="jDl-79-vzS"/>
+                <constraint firstItem="cVo-jE-guq" firstAttribute="leading" secondItem="TBQ-Py-SFN" secondAttribute="trailing" constant="16" id="uuw-Cd-1IS"/>
+                <constraint firstItem="TBQ-Py-SFN" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="16" id="vzH-EC-Cus"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="cVo-jE-guq" secondAttribute="trailing" constant="16" id="wWz-PT-Dhg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="594" height="273"/>
+            <connections>
+                <outlet property="avatarImageView" destination="TBQ-Py-SFN" id="uXn-em-Dm2"/>
+                <outlet property="expertiseLabel" destination="hCH-ue-t3i" id="FAy-yn-HkI"/>
+                <outlet property="nameLabel" destination="iZN-86-gx4" id="ocV-c2-tps"/>
+                <outlet property="positionLabel" destination="YBU-H6-frJ" id="LRl-LD-d4W"/>
+            </connections>
+            <point key="canvasLocation" x="389.85507246376812" y="163.05803571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
